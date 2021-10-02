@@ -11,7 +11,7 @@
     <title>very Super Simple Example Webpage</title>
 </head>
 <body>
-  <h1>Nice Super Simple Example Web Page</h1>
+  <h1>Pipeline Nice Super Simple Example Web Page</h1>
   <p>
     This is a very simple example web page on a JSP for Jenkins testing.
   </p>
