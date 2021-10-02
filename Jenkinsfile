@@ -8,10 +8,7 @@ pipeline {
             }
         stage('deploy') {
             steps {
-                echo "hi"
-                url "http://localhost:9080"
-                war "**/*.war"
-                contextpath "/demo"
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-manager-scripts', path: '', url: 'http://localhost:9080')], contextPath: '/demo', war: '**/*.war'
             }
         }
     }
